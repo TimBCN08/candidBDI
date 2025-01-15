@@ -93,11 +93,14 @@
                 move();
             });
         });
+        function openImage() {
+            window.open('fesses.jpg', '_blank');
+        }
     </script>
 </head>
 <body>
     <div class="background"></div>
-    <div class="title">Candidature RESP. INFO de TITISMALLTEUB</div>
+    <div class="title"><span class="hidden-highlight" onclick="openImage()">C</span>andidature RESP. INFO de TITISMALLTEUB</div>
     <button class="button" id="button1" onclick="location.href='candidature.html'">Candidature</button>
     <button class="button" id="button2" onclick="location.href='cv_asso.html'">CV Asso</button>
 </body>
