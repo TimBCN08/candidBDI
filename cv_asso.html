@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Associatif</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: auto;
+            font-family: Arial, sans-serif;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('cv_background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            z-index: -1;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #555;
+            display: inline-block;
+        }
+
+        .section p {
+            margin: 5px 0;
+            line-height: 1.5;
+        }
+
+        .section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .section ul li {
+            margin-bottom: 5px;
+        }
+
+        .side-image {
+            position: absolute;
+            top: 25%;
+            width: 600px;
+            height: auto;
+            transform: translateY(-50%);
+            z-index: 0;
+        }
+
+        .left-image {
+            left: 10px;
+        }
+
+        .right-image {
+            right: 10px;
+        }
+
+        @media (max-width: 900px) {
+            .side-image {
+                display: none;
+            }
+        }
+
+        .bottom-image {
+            position: relative;
+            display: block;
+            width: 80%;
+            height: auto;
+            max-height: 300px;
+            margin: 20px auto 0;
+        }
+
+        .back-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            width: fit-content;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <img src="left_image.jpg" alt="Left Decoration" class="side-image left-image">
+    <img src="right_image.jpg" alt="Right Decoration" class="side-image right-image">
+    <div class="content">
+        <div class="title">CV Associatif</div>
+
+        <div class="section">
+            <h2>Compiègne en Lumière</h2>
+            <p>Responsable Informatique<p>
+            <p>Semestres : A24 - P25</p>
+            <ul>
+                <li>Gestion des infrastructures numériques.</li>
+                <li>Mise à jour du site web.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Intégration UTC</h2>
+            <p>Membre de la team de la Course Colorée</p>
+            <p>Semestres : P24 - A24</p>
+            <ul>
+                <li>Organisation du village associatif.</li>
+                <li>Mise en place du plan de communication (flyers, affiches...).</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>UTrip</h2>
+            <p>Trésorier</p>
+            <p>Semestre : A23</p>
+            <ul>
+                <li>Mise en place des budgets prévisionnels et bilans financiers.</li>
+                <li>Réalisation des dossiers de subventions FSDIE, BDE, DD.</li>
+                <li>Soutenance des dossiers de subventions.</li>
+                <li>Manipulation des fonds de trésorerie en fonction du budget.</li>
+            </ul>
+        </div>
+        <a href="index.html" class="back-button">Retour à l'accueil</a>
+    </div>
+    <img src="bottom_image.jpg" alt="Bottom Decoration" class="bottom-image">
+</body>
+</html>
